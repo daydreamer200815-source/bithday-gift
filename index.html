@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday My Love</title>
-    <!-- Importing Google Fonts for the aesthetic look -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Happy Birthday Minniiee<3</title>
+    <!-- Importing Google Fonts for the aesthetic and graphic look -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-pink: #ff9a9e;
@@ -57,20 +57,30 @@
             text-align: center;
             position: relative;
             z-index: 1;
+            padding: 0 20px;
         }
 
+        /* Graphic Styled Main Title (Restored) */
         .hero h1 {
-            font-family: 'Dancing Script', cursive;
-            font-size: 5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: clamp(3rem, 10vw, 6rem); 
+            text-transform: uppercase;
+            letter-spacing: -2px;
             margin-bottom: 10px;
             color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            /* Layered text shadow for a graphic "pop" effect */
+            text-shadow: 
+                3px 3px 0px var(--dark-pink),
+                6px 6px 0px rgba(0,0,0,0.1);
+            line-height: 0.9;
         }
 
         .hero p {
             font-size: 1.2rem;
             max-width: 600px;
-            margin: 0 auto 30px;
+            margin: 20px auto 30px;
+            font-weight: 400;
         }
 
         /* Buttons */
@@ -108,22 +118,26 @@
 
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .photo-card {
             background: white;
-            padding: 10px;
+            padding: 25px;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 350px;
         }
 
         .photo-card:hover {
-            transform: rotate(-3deg) scale(1.05);
+            transform: rotate(-2deg) scale(1.02);
         }
 
         .photo-card img {
@@ -131,6 +145,15 @@
             height: 250px;
             object-fit: cover;
             border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .photo-card p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: #555;
+            text-align: center;
+            margin: auto 0;
         }
 
         /* Message Section */
@@ -149,6 +172,12 @@
             line-height: 1.8;
         }
 
+        .message-card h2 {
+            font-family: 'Dancing Script', cursive;
+            color: var(--dark-pink);
+            font-size: 2.5rem;
+        }
+
         /* Footer */
         footer {
             padding: 40px;
@@ -163,11 +192,17 @@
             color: #ff4b2b;
             pointer-events: none;
             animation: pop 0.8s ease-out forwards;
+            z-index: 9999;
         }
 
         @keyframes pop {
             0% { transform: scale(0); opacity: 1; }
             100% { transform: scale(3) translateY(-100px); opacity: 0; }
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2.5rem; letter-spacing: -1px; }
+            .message-card { padding: 30px; }
         }
     </style>
 </head>
@@ -176,48 +211,47 @@
     <div id="particles"></div>
 
     <section class="hero">
-        <h1>Happy Birthday, Beautiful!</h1>
-        <p>Today is all about celebrating you and the joy you bring to my life.</p>
+        <h1>Happy Birthday,<br>Minniiee<3</h1>
+        <p>A little piece of the internet to celebrate my favorite person!</p>
         <button class="cta-button" onclick="scrollToSection('gallery')">Start the Celebration 💖</button>
     </section>
 
     <section id="gallery" class="gallery">
         <h2>Our Beautiful Memories</h2>
         <div class="photo-grid">
-            <!-- Replace these placeholder image URLs with your actual photos -->
             <div class="photo-card">
-                <img src="https://images.unsplash.com/photo-1516589174184-c68536575803?auto=format&fit=crop&w=500" alt="Memory 1">
-                <p>The day we met...</p>
+                <p>There are so many memoriessss, idkkk which one to highlighttt, the blush on trip, or endless night talks, or maam aqsa walla "how you take it" or the day we both fell on pakstds test day, jitni memories yaad karon kam ha there's so much more for us to discover and make alot more memories together<3, you will always find me by your side, i love you sooo much that words cant describe meri jaan</p>
             </div>
+            
             <div class="photo-card">
-                <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=500" alt="Memory 2">
-                <p>Endless laughter.</p>
+                <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=500" alt="Besties">
+                <p>I never thought we gonna be besties, you are the best thing that ever happened to me, didn't knew we gonna stay till end but now INSHALLAH we will be there till the end, thank you hun for always listenin to my yap and not judging me, I loved taking pictures for you on farewell :P and the CINNAMON rolls OMG i want emmm!</p>
             </div>
+            
             <div class="photo-card">
-                <img src="https://images.unsplash.com/photo-1522673607200-164883eecd18?auto=format&fit=crop&w=500" alt="Memory 3">
-                <p>To many more years!</p>
+                <img src="https://images.unsplash.com/photo-1522673607200-164883eecd18?auto=format&fit=crop&w=500" alt="Sista">
+                <p>I can't forget the time i have spent with you, those fries during boards, that white sauce pasta you madee yummm(mu me pani agaya) wo churan or wo CRAZYDIPS yar, can't wait for you to join my college, BROTHA EUGHHH hehehe and our fake arguments to disguise our friendship from our friends, I always find you really COOL and OG and now you are my hg my sistaaaa</p>
             </div>
         </div>
     </section>
 
     <section class="message-section">
         <div class="message-card">
-            <h2>A Special Message For You</h2>
-            <p>On this special day, I want you to know how grateful I am to have you in my life. Your laughter fills my days with joy, and your love gives me strength.</p>
-            <p>You make everything better. I hope this new year of your life brings you endless happiness, incredible adventures, and all your dreams come true.</p>
-            <p><strong>Happy Birthday, My Love!</strong></p>
+            <h2>HAPPY BIRTHDAY JAAN</h2>
+            <p>I WANT YA TO KNOW THAT YOU ARE MY PRECIOUS LEMON AND IM SO GRATEFUL TO HAVE YOU AS MY BESTIEEE, YOU FILL MY DAYS WITH CHAOS AND LAUGHTER, YOUR LOVE MAKES ME A LIL MORE CONFIDENT, YOU MAKE EVERYTHING MUCH BETTER.</p>
+            <p>I HOPE THIS NEW YEAR ON YOUR LIFE BRINGS YOU ENDLESS happiness, AND MAY ALLAH GRANT YOUR EVERY WISH AMEEN!</p>
+            <p><strong>STAY THARKI >u<</strong></p>
         </div>
     </section>
 
     <footer>
-        <p>Made with ❤️ for someone special</p>
+        <p>Made with ❤️ for Minniiee<3</p>
     </footer>
 
     <script>
-        // Particle background generator
         function createParticles() {
             const container = document.getElementById('particles');
-            const emojis = ['💖', '✨', '🌸', '🎈', '🍰', '💝'];
+            const emojis = ['💖', '✨', '🌷', '🎊', '🍰', '💝', '🍋', '🎀', '✨', '🦀', '🥂'];
             
             for (let i = 0; i < 40; i++) {
                 const particle = document.createElement('div');
@@ -231,18 +265,16 @@
             }
         }
 
-        // Smooth scroll function
         function scrollToSection(id) {
             document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Heart click effect
         document.addEventListener('click', (e) => {
             const heart = document.createElement('div');
             heart.innerHTML = '❤️';
             heart.className = 'heart-pop';
-            heart.style.left = e.pageX + 'px';
-            heart.style.top = e.pageY + 'px';
+            heart.style.left = (e.pageX - 10) + 'px';
+            heart.style.top = (e.pageY - 10) + 'px';
             document.body.appendChild(heart);
             
             setTimeout(() => {
